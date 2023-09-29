@@ -17,17 +17,6 @@ namespace AClassLibrary1 {
         public CustomControl1() {
             this.DefaultStyleKey = typeof(CustomControl1);
         }
-
-
-
-        public StyleSelector ItemContainerStyleSelector {
-            get { return (StyleSelector)GetValue(ItemContainerStyleSelectorProperty); }
-            set { SetValue(ItemContainerStyleSelectorProperty, value); }
-        }
-
-        public static readonly DependencyProperty ItemContainerStyleSelectorProperty =
-            DependencyProperty.Register(nameof(ItemContainerStyleSelector), typeof(StyleSelector), typeof(CustomControl1), new PropertyMetadata(null));
-
      
     }
 }

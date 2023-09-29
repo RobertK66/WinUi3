@@ -1,10 +1,21 @@
 <ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:local="using:AClassLibrary1"
+                xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     >
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///AClassLib/ResourceDisctonary1.xaml" />
-        <ResourceDictionary Source="ms-appx:///AClassLib/ResourceDisctonary2.xaml" />
-    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="DefaultSettingsExpanderStyle" TargetType="local:CustomControl1">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="local:CustomControl1">
+                       <muxc:ItemsRepeater />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+
 
 </ResourceDictionary>
