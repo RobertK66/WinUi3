@@ -30,21 +30,21 @@
             </Style.Setters>
         </Style>
 
-        <Style x:Key="ClickableSettingsExpanderItemStyle"
+        <!--<Style x:Key="ClickableSettingsExpanderItemStyle"
            BasedOn="{StaticResource DefaultSettingsExpanderItemStyle}"
            TargetType="local:CustomControl1">
             <Style.Setters>
                 <Setter Property="Padding" Value="{ThemeResource ClickableSettingsExpanderItemPadding}" />
             </Style.Setters>
-        </Style>
+        </Style>-->
 
         <!--<local:SettingsExpanderItemStyleSelector x:Key="SettingsExpanderItemStyleSelector"
                                              ClickableStyle="{StaticResource ClickableSettingsExpanderItemStyle}"
                                              DefaultStyle="{StaticResource DefaultSettingsExpanderItemStyle}" />-->
 
         <!--  Implicitly applied default style  -->
-        <Style BasedOn="{StaticResource DefaultSettingsExpanderStyle}"
-           TargetType="local:CustomControl1" />
+        <!--<Style BasedOn="{StaticResource DefaultSettingsExpanderStyle}"
+           TargetType="local:CustomControl1" />-->
 
         <Style x:Key="DefaultSettingsExpanderStyle"
            TargetType="local:CustomControl1">
@@ -118,7 +118,7 @@
             </Style.Setters>
         </Style>
 
-        <Style x:Key="SettingsExpanderExpanderStyle"
+        <!--<Style x:Key="SettingsExpanderExpanderStyle"
            TargetType="muxc:Expander">
             <Setter Property="Background" Value="{ThemeResource ExpanderContentBackground}" />
             <Setter Property="BackgroundSizing" Value="InnerBorderEdge" />
@@ -260,7 +260,7 @@
                                       IsEnabled="{TemplateBinding IsEnabled}"
                                       IsTabStop="True"
                                       Style="{StaticResource SettingsExpanderHeaderDownStyle}" />
-                            <!--  The clip is a composition clip applied in code  -->
+                            --><!--  The clip is a composition clip applied in code  --><!--
                             <Border x:Name="ExpanderContentClip"
                                 Grid.Row="1">
                                 <Border x:Name="ExpanderContent"
@@ -288,9 +288,9 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-        </Style>
+        </Style>-->
 
-        <Style x:Key="SettingsExpanderHeaderDownStyle"
+        <!--<Style x:Key="SettingsExpanderHeaderDownStyle"
            TargetType="ToggleButton">
             <Setter Property="Padding" Value="0" />
             <Setter Property="HorizontalContentAlignment" Value="Left" />
@@ -573,9 +573,7 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-        </Style>
-
-    
+        </Style>-->
 
 
 </ResourceDictionary>
