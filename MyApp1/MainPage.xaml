@@ -16,7 +16,11 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <ItemsView  Grid.Column="0" ItemsSource="{x:Bind StringList}"/>
+            <ItemsView x:Name="MyIv"  Grid.Column="0" ItemsSource="{x:Bind StringList}" >
+                <ItemsView.ItemTransitionProvider>
+                    <LinedFlowLayoutItemCollectionTransitionProvider/>
+                </ItemsView.ItemTransitionProvider>
+            </ItemsView>
             <StackPanel Grid.Column="1" Orientation="Horizontal">
                 <Button Click="Button_Click">Add</Button>
                 <Button Click="Button_Click_1">Clr</Button>

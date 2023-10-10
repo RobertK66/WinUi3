@@ -4,18 +4,16 @@
                 xmlns:local="using:AClassLibrary1"
                 xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     >
-
     <Style x:Key="DefaultSettingsExpanderStyle" TargetType="local:CustomControl1">
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="local:CustomControl1">
-                       <muxc:ItemsRepeater />
+                        <!-- remove the following line (Or rename this AClassLibrary project to ZClassLibrary!) and everything is ok. -->
+                        <muxc:ItemsRepeater />
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style.Setters>
     </Style>
-
-
 </ResourceDictionary>
